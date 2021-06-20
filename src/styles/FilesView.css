@@ -1,0 +1,187 @@
+.fileCard {
+    height: 190px;
+    width: 240px;
+    border-radius: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    margin: 5px; 
+}
+
+.fileCard--top {
+    height: 70%;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fileCard--bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+}
+
+.fileCard--bottom>p {
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.fileURL {
+    text-decoration: none;
+    color: black;
+}
+
+.fileView{
+    width: 80%;
+    /* TRouBLe */
+    margin: 0px 0px 0px 25px;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.fileView::-webkit-scrollbar {
+    width: 7px;
+    /* display: none; */
+}
+
+.fileView::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgb(204,204,204);
+    background-color: #737272;
+}
+
+.fileView__heading {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding: 5px 0px 5px 0px;
+    position: sticky;
+    height: auto;
+    top: 0;
+    background-color: white;
+}
+
+.fileViewRow__heading {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 0px 0px 0px;
+    height: auto;
+    background-color: white;
+}
+
+.border {
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-bottom: 10px;
+}
+
+.fileViewRow__heading > p {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.fileView__heading > p {
+    font-size: 20px;
+    padding: 10px 0px 10px 10px;
+}
+
+.fileView__heading > MuiSvgIcon-root {
+    padding-top: 5px;
+}
+
+.fileView__headingRight {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.fileView__items::-webkit-scrollbar {
+    display: none;
+}
+
+.fileViewEmpty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.fileViewEmpty > img {
+    margin-top: 100px;
+}
+
+.fileView__row{
+    margin-right: 12px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.fileView__row::-webkit-scrollbar {
+    display: none;
+}
+
+.fileView__titles{
+    display: flex;
+    margin-bottom: 5px;
+    color: rgb(85, 78, 78);
+}
+
+.fileView__titles>div>*{
+    margin: 5px;
+}
+
+.fileView__titles--left{
+    font-weight: bold;
+    margin-left: 15px;
+    flex: 1;
+}
+
+.fileView__titles--right{
+    font-weight: bold;
+    display: flex;
+    padding-right: 5px;
+}
+
+.table {
+    min-width: 650px;
+}
+
+@media(max-width: 768px) {
+    .fileViewEmpty > img {
+        height: 150px;
+        overflow-x: hidden;
+    }
+
+    .fileView {
+        width: 100%;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .fileViewEmpty > img{
+        height: 120px;
+    }
+
+    .table {
+        min-width: 500px;
+    }
+}
+
+@media(max-width: 375px) {
+    .fileItem--rightOne, .fileView__titles--righttOne {
+        display: none;
+    }
+}
+
+@media(max-width: 425px) {
+    .fileItem--mobile {
+        display: none !important;
+    }
+
+    .table {
+        min-width: 200px;
+    }
+}

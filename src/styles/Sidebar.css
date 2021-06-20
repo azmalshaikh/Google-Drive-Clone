@@ -1,0 +1,136 @@
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    /* margin-right: 5px; */
+}
+
+hr {
+    background-color: rgb(197, 197, 197);
+    height: 1px;
+    border: none;
+}
+
+.newFile {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    padding-left: 20px;
+}
+
+.newFile__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* TRouBLe */
+    padding: 6px 32px 6px 8px;
+    border-radius: 50px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+    cursor: pointer;
+}
+
+.newFile__container>p{
+    padding-bottom: 3.5px;
+    margin-left: 10px;
+    /* zoom: 120%; */
+}
+
+.modalheading {
+    color: rgb(5, 155, 215);
+}
+
+.newFile__modal {
+    position: absolute;
+    width: 400px;
+    background-color: white;
+    border: 1px solid #000;
+    box-shadow:rgb(197, 197, 197);
+    padding: 10px 20px;
+}
+
+.inputfield {
+    font-size: 15px;
+} 
+
+.buttonupload {
+    display: block;
+    color: white;
+    background-color: rgb(5, 155, 215);
+    outline: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonupload :focus {
+    outline: none;
+}
+
+.sidebarItem{
+    display: flex;
+    padding: 7px 0;
+    /* TRouBLe */
+    border-radius: 0 100px 100px 0;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #E8F0FE;
+}
+
+.sidebarItem:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.sidebarItem__arrow {
+    width: 22px;
+    margin-left: 5px;
+}
+
+.sidebarItem__main {
+    display: flex;
+}
+
+.sidebarItem__main>p {
+    margin-left: 20px;
+    /* font-size: 15px; */
+}
+
+.sidebarItem__heading {
+    color: rgb(66,133,244);
+    padding-top: 1px;
+}
+
+@media(max-width: 768px) {
+    .sidebar {
+        width: 30%;
+    }
+} 
+
+@media(max-width: 425px) {
+    .sidebar__itemsContainer {
+        display: none;
+    }
+
+    .sidebar {
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .newFile__modal {
+        width: 300px;
+    }
+
+    .newFile {
+        padding-left: 0px;
+    }
+}
+
+@media(max-width: 320px) {
+    .newFile__modal {
+        width: 250px;
+    }
+}
